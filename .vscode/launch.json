@@ -1,0 +1,32 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "启动一个独立的 Chrome 以调试 frontend",
+            "url": "http://localhost:8091/frontend",
+            "webRoot": "${workspaceRoot}/frontend"
+        },
+        {
+            "type": "chrome",
+            "request": "attach",
+            "name": "监听一个已经启动调试模式的 Chrome",
+            "port": 9222,
+            "url": "http://localhost:8091/frontend",
+            "webRoot": "${workspaceRoot}/frontend"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "启动 Node 服务器",
+            "program": "${workspaceRoot}/server/app.js"
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "附加于已启动的 Node 服务器",
+            "port": 5858
+        }
+    ]
+}

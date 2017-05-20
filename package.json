@@ -1,0 +1,16 @@
+{
+  "name": "vscode-debug-guide",
+  "version": "1.0.0",
+  "author": "Jerry Zou (jerry.zry@outlook.com)",
+  "license": "MIT",
+  "scripts": {
+    "frontend": "anywhere -p 8091",
+    "backend": "node server/app.js",
+    "backend:debug": "nodemon --debug server/app.js",
+    "backend:inspect": "nodemon --inspect server/app.js"
+  },
+  "devDependencies": {
+    "anywhere": "^1.4.0",
+    "nodemon": "^1.11.0"
+  }
+}
