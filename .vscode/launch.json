@@ -25,8 +25,16 @@
         {
             "type": "node",
             "request": "attach",
-            "name": "附加于已启动的 Node 服务器",
-            "port": 5858
+            "name": "附加于已启动的 Node 服务器（debug模式）",
+            "port": 5858,
+            "restart": true
+        },
+        {
+            "type": "node",
+            "request": "attach",
+            "name": "附加于已启动的 Node 服务器（inspect模式）",
+            "port": 9229,
+            "restart": true
         }
     ]
 }

@@ -19,3 +19,16 @@ yarn
 
 ### 2. 调试通过 Nodemon 启动的 Node 服务器
 
+#### debug 模式
+
+1. `npm run backend:debug`
+2. 启动调试配置：“附加于已启动的 Node 服务器（debug模式）”
+3. 在 `server/app.js` 中加断点
+4. 访问 `http://localhost:8092/`
+
+#### inspect 模式
+
+1. `npm run backend:inspect`
+2. 启动调试配置：“附加于已启动的 Node 服务器（inspect模式）”
+3. 在 `server/app.js` 中加断点
+4. 访问 `http://localhost:8092/`
