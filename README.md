@@ -1,6 +1,8 @@
 VSCODE Debug Guide
 ---
 
+相关文章：[Visual Studio Code 前端调试不完全指南](http://jerryzou.com/posts/vscode-debug-guide/)
+
 ### 安装依赖
 
 ```
