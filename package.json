@@ -6,7 +6,6 @@
   "scripts": {
     "frontend": "anywhere -p 8091",
     "backend": "node server/app.js",
-    "backend:debug": "nodemon --debug server/app.js",
     "backend:inspect": "nodemon --inspect server/app.js"
   },
   "devDependencies": {
