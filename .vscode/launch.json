@@ -35,6 +35,19 @@
             "name": "附加于已启动的 Node 服务器（inspect模式）",
             "port": 9229,
             "restart": true
+        },
+        {
+            // 该方式要求全局安装 nodemon
+            // - npm install -g nodemon
+            // - yarn global add nodemon
+            "type": "node",
+            "request": "launch",
+            "name": "nodemon",
+            "runtimeExecutable": "nodemon",
+            "program": "${workspaceRoot}/server/app.js",
+            "restart": true,
+            "console": "integratedTerminal",
+            "internalConsoleOptions": "neverOpen"
         }
     ]
 }
